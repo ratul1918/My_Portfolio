@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { useInView } from "react-intersection-observer";
 import { Code2, Cpu, Rocket, BookOpen } from "lucide-react";
 import { SectionMatrixRain } from "./SectionMatrixRain";
-import profileImage from "@assets/profile";
+import profileImage from "../assets/d20210aa9445e5e607e401fd25046fe77293a792.png";
 
 export function About() {
   const [ref, inView] = useInView({
@@ -35,7 +35,7 @@ export function About() {
           >
             About Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00ff66] to-[#00eaff] mx-auto" />
+          <div className="w-24 h-1 bg-linear-to-r from-[#00ff66] to-[#00eaff] mx-auto" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
@@ -47,7 +47,7 @@ export function About() {
           >
             <div className="relative w-full max-w-md">
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-[#00ff66] via-[#00eaff] to-[#7c3aed] blur-xl rounded-xl"
+                className="absolute inset-0 bg-linear-to-r from-[#00ff66] via-[#00eaff] to-[#7c3aed] blur-xl rounded-xl"
                 animate={{
                   opacity: [0.5, 0.8, 0.5],
                   scale: [1, 1.05, 1],
@@ -61,8 +61,8 @@ export function About() {
                   className="w-full h-full object-cover"
                 />
                 {/* Right side fade to background */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black pointer-events-none" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-linear-to-r from-transparent via-transparent to-black pointer-events-none" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
               </div>
             </div>
           </motion.div>
@@ -117,7 +117,7 @@ export function About() {
               whileHover={{ scale: 1.05, rotateY: 5 }}
               className="relative group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-[#00ff66]/20 to-[#00eaff]/20 rounded-xl blur-xl group-hover:blur-2xl transition-all" />
+              <div className="absolute inset-0 bg-linear-to-br from-[#00ff66]/20 to-[#00eaff]/20 rounded-xl blur-xl group-hover:blur-2xl transition-all" />
               <div className="relative bg-black/50 backdrop-blur-xl border border-[#00ff66]/30 rounded-xl p-6 text-center">
                 <stat.icon className="w-8 h-8 text-[#00ff66] mx-auto mb-3" />
                 <div className="text-3xl font-bold text-[#00eaff] mb-2" style={{ fontFamily: "JetBrains Mono, monospace" }}>

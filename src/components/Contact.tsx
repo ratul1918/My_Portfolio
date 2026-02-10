@@ -64,7 +64,7 @@ export function Contact() {
           <p className="text-white/70 text-lg mb-6">
             Let's build something amazing together
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00eaff] to-[#7c3aed] mx-auto" />
+          <div className="w-24 h-1 bg-linear-to-r from-[#00eaff] to-[#7c3aed] mx-auto" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -75,7 +75,7 @@ export function Contact() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-[#00ff66]/10 to-[#00eaff]/10 rounded-2xl blur-2xl" />
+            <div className="absolute inset-0 bg-linear-to-br from-[#00ff66]/10 to-[#00eaff]/10 rounded-2xl blur-2xl" />
             <div className="relative bg-black/70 backdrop-blur-xl border border-[#00ff66]/20 rounded-2xl p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -128,7 +128,7 @@ export function Contact() {
 
                 <motion.button
                   type="submit"
-                  className="w-full px-6 py-4 bg-gradient-to-r from-[#00ff66] to-[#00eaff] text-black font-bold rounded-lg flex items-center justify-center gap-2"
+                  className="w-full px-6 py-4 bg-linear-to-r from-[#00ff66] to-[#00eaff] text-black font-bold rounded-lg flex items-center justify-center gap-2"
                   whileHover={{ scale: 1.02, boxShadow: "0 0 30px #00ff66" }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -147,7 +147,7 @@ export function Contact() {
             className="space-y-8"
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#00eaff]/10 to-[#7c3aed]/10 rounded-2xl blur-2xl" />
+              <div className="absolute inset-0 bg-linear-to-br from-[#00eaff]/10 to-[#7c3aed]/10 rounded-2xl blur-2xl" />
               <div className="relative bg-black/70 backdrop-blur-xl border border-[#00eaff]/20 rounded-2xl p-8">
                 <h3
                   className="text-2xl font-bold text-white mb-4"
@@ -209,7 +209,7 @@ export function Contact() {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-[#7c3aed]/10 to-[#00ff66]/10 rounded-2xl blur-2xl" />
+              <div className="absolute inset-0 bg-linear-to-br from-[#7c3aed]/10 to-[#00ff66]/10 rounded-2xl blur-2xl" />
               <div className="relative bg-black/70 backdrop-blur-xl border border-[#7c3aed]/20 rounded-2xl p-8 text-center">
                 <p className="text-white/60 mb-4">Currently available for</p>
                 <div className="space-y-2">

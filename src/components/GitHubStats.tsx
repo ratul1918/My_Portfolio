@@ -72,7 +72,7 @@ export function GitHubStats() {
           >
             GitHub Activity
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00ff66] to-[#00eaff] mx-auto" />
+          <div className="w-24 h-1 bg-linear-to-r from-[#00ff66] to-[#00eaff] mx-auto" />
         </motion.div>
 
         {/* Stats Cards */}
@@ -116,7 +116,7 @@ export function GitHubStats() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="relative mb-12"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-[#00ff66]/10 to-[#00eaff]/10 rounded-2xl blur-2xl" />
+          <div className="absolute inset-0 bg-linear-to-r from-[#00ff66]/10 to-[#00eaff]/10 rounded-2xl blur-2xl" />
           <div className="relative bg-black/70 backdrop-blur-xl border border-[#00ff66]/20 rounded-2xl p-8">
             <h3 className="text-xl font-bold text-white mb-6" style={{ fontFamily: "Orbitron, sans-serif" }}>
               Contribution Activity
@@ -164,7 +164,7 @@ export function GitHubStats() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="relative"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-[#00eaff]/10 to-[#7c3aed]/10 rounded-2xl blur-2xl" />
+          <div className="absolute inset-0 bg-linear-to-r from-[#00eaff]/10 to-[#7c3aed]/10 rounded-2xl blur-2xl" />
           <div className="relative bg-black/70 backdrop-blur-xl border border-[#00eaff]/20 rounded-2xl p-8">
             <h3 className="text-xl font-bold text-white mb-6" style={{ fontFamily: "Orbitron, sans-serif" }}>
               Language Distribution
@@ -214,7 +214,7 @@ export function GitHubStats() {
             href="https://github.com/ratul1918"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#00ff66] to-[#00eaff] text-black font-bold rounded-lg"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-[#00ff66] to-[#00eaff] text-black font-bold rounded-lg"
             whileHover={{ scale: 1.05, boxShadow: "0 0 30px #00ff66" }}
             whileTap={{ scale: 0.95 }}
           >

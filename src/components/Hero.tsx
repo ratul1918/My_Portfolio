@@ -89,7 +89,7 @@ export function Hero() {
           >
             <motion.button
               onClick={scrollToProjects}
-              className="px-8 py-4 bg-gradient-to-r from-[#00ff66] to-[#00eaff] text-black font-bold rounded-lg relative overflow-hidden group"
+              className="px-8 py-4 bg-linear-to-r from-[#00ff66] to-[#00eaff] text-black font-bold rounded-lg relative overflow-hidden group"
               whileHover={{ scale: 1.05, boxShadow: "0 0 30px #00ff66" }}
               whileTap={{ scale: 0.95 }}
             >

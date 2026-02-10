@@ -55,7 +55,7 @@ export function FunProjects() {
   ];
 
   return (
-    <section className="relative py-32 px-6 z-10 bg-gradient-to-b from-black via-black/95 to-black overflow-hidden">
+    <section className="relative py-32 px-6 z-10 bg-linear-to-b from-black via-black/95 to-black overflow-hidden">
       <SectionMatrixRain opacity={0.28} speed={0.9} density="medium" />
       
       <div className="max-w-7xl mx-auto relative z-10">
@@ -81,7 +81,7 @@ export function FunProjects() {
           <p className="text-white/60 text-lg mt-4">
             Learning through building • Experimenting with concepts • Having fun with code
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#00ff66] via-[#00eaff] to-[#7c3aed] mx-auto mt-6" />
+          <div className="w-24 h-1 bg-linear-to-r from-[#00ff66] via-[#00eaff] to-[#7c3aed] mx-auto mt-6" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
