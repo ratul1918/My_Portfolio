@@ -89,7 +89,7 @@ export function Contact() {
                       setFormData({ ...formData, name: e.target.value })
                     }
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#00ff66] focus:ring-2 focus:ring-[#00ff66]/20 transition-all"
-                    placeholder="Your name"
+                    placeholder="Your Name"
                     whileFocus={{ scale: 1.01 }}
                   />
                 </div>
@@ -105,7 +105,7 @@ export function Contact() {
                       setFormData({ ...formData, email: e.target.value })
                     }
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#00eaff] focus:ring-2 focus:ring-[#00eaff]/20 transition-all"
-                    placeholder="rafiurrahman1918@gmail.com"
+                    placeholder="yourname@example.com"
                     whileFocus={{ scale: 1.01 }}
                   />
                 </div>
@@ -121,7 +121,7 @@ export function Contact() {
                     }
                     rows={5}
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#7c3aed] focus:ring-2 focus:ring-[#7c3aed]/20 transition-all resize-none"
-                    placeholder="Your message..."
+                    placeholder="Hi! I'm interested in collaborating..."
                     whileFocus={{ scale: 1.01 }}
                   />
                 </div>
