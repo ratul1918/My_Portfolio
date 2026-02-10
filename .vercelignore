@@ -1,0 +1,15 @@
+.git
+.gitignore
+.npmrc
+README.md
+CHANGELOG.md
+node_modules
+npm-debug.log
+.DS_Store
+.env
+.env.local
+*.pem
+.vercel
+build
+dist
+.next
