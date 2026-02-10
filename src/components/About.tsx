@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { useInView } from "react-intersection-observer";
 import { Code2, Cpu, Rocket, BookOpen } from "lucide-react";
 import { SectionMatrixRain } from "./SectionMatrixRain";
-import profileImage from "figma:asset/d20210aa9445e5e607e401fd25046fe77293a792.png";
+import profileImage from "@assets/profile";
 
 export function About() {
   const [ref, inView] = useInView({
