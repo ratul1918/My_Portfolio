@@ -32,13 +32,13 @@ export function Contact() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/in/rafiur-rahman-9b3723336",
       color: "#00eaff",
     },
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:rafiur@example.com",
+      href: "mailto:rafiurrahman1918@gmail.com",
       color: "#7c3aed",
     },
   ];
@@ -105,7 +105,7 @@ export function Contact() {
                       setFormData({ ...formData, email: e.target.value })
                     }
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#00eaff] focus:ring-2 focus:ring-[#00eaff]/20 transition-all"
-                    placeholder="your.email@example.com"
+                    placeholder="rafiurrahman1918@gmail.com"
                     whileFocus={{ scale: 1.01 }}
                   />
                 </div>
@@ -186,7 +186,7 @@ export function Contact() {
                           {link.href === "https://github.com/ratul1918"
                             ? "@ratul1918"
                             : link.label === "Email"
-                            ? "rafiur@example.com"
+                            ? "rafiurrahman1918@gmail.com"
                             : "Connect on LinkedIn"}
                         </div>
                       </div>
