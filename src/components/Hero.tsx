@@ -7,11 +7,9 @@ export function Hero() {
   const [currentPhrase, setCurrentPhrase] = useState(0);
   
   const phrases = [
-    "SaaS Entrepreneur & Builder",
-    "Full-Stack SaaS Developer",
-    "Learning & Teaching Systems",
-    "AI-Powered Solutions",
-    "Scalable Software Architect",
+    "Full-Stack Developer",
+    "Systems & Backend Engineer",
+    "AI & Tech Enthusiast",
   ];
 
   useEffect(() => {
@@ -50,11 +48,11 @@ export function Hero() {
             }}
             transition={{ duration: 2, repeat: Infinity }}
           >
-            Scaling SaaS,
+            I Build & Create
             <br />
-            <span className="text-[#00ff66]">Building & Learning</span>
+            <span className="text-[#00ff66]">Innovative</span>
             <br />
-            The Future
+            Solutions
           </motion.h1>
 
           <motion.div
@@ -80,7 +78,7 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            SaaS Founder & Full-Stack Developer | Learning Engineering | Building scalable systems that solve real problems
+            Developer | Problem Solver | Building the future with code and creativity
           </motion.p>
 
           <motion.div
@@ -126,23 +124,6 @@ export function Hero() {
               <Mail size={20} />
               Contact
             </motion.button>
-          </motion.div>
-
-          <motion.div
-            className="mt-16 pt-8 border-t border-[#00ff66]/30"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.2 }}
-          >
-            <p className="text-sm md:text-base text-[#00eaff] mb-6 font-semibold">Learning & Building In:</p>
-            <div className="flex flex-wrap justify-center gap-3">
-              <div className="px-4 py-2 bg-[#00ff66]/10 border border-[#00ff66]/30 rounded-lg text-[#00ff66] text-sm">📚 SaaS Architecture</div>
-              <div className="px-4 py-2 bg-[#00eaff]/10 border border-[#00eaff]/30 rounded-lg text-[#00eaff] text-sm">🚀 Product Strategy</div>
-              <div className="px-4 py-2 bg-[#7c3aed]/10 border border-[#7c3aed]/30 rounded-lg text-[#7c3aed] text-sm">🤖 AI & LLMs</div>
-              <div className="px-4 py-2 bg-[#00ff66]/10 border border-[#00ff66]/30 rounded-lg text-[#00ff66] text-sm">⚙️ System Design</div>
-              <div className="px-4 py-2 bg-[#00eaff]/10 border border-[#00eaff]/30 rounded-lg text-[#00eaff] text-sm">📖 Technical Writing</div>
-              <div className="px-4 py-2 bg-[#7c3aed]/10 border border-[#7c3aed]/30 rounded-lg text-[#7c3aed] text-sm">🎓 Teaching & Mentoring</div>
-            </div>
           </motion.div>
         </motion.div>
 
