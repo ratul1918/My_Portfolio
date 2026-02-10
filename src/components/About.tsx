@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useInView } from "react-intersection-observer";
-import { Code2, Cpu, Rocket, BookOpen } from "lucide-react";
+import { Code2, Cpu, Rocket, BookOpen, Linkedin, Mail } from "lucide-react";
 import { SectionMatrixRain } from "./SectionMatrixRain";
 import profileImage from "../assets/d20210aa9445e5e607e401fd25046fe77293a792.png";
 
@@ -98,6 +98,29 @@ export function About() {
               <span className="px-4 py-2 bg-[#7c3aed]/10 border border-[#7c3aed]/30 rounded-lg text-[#7c3aed]">
                 Lifelong Learner
               </span>
+            </div>
+
+            <div className="flex gap-4 mt-6">
+              <motion.a
+                href="https://www.linkedin.com/in/rafiur-rahman-9b3723336"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0077b5]/10 border border-[#0077b5]/30 rounded-lg text-[#0077b5] font-semibold hover:bg-[#0077b5]/20 transition-all"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Linkedin size={18} />
+                LinkedIn
+              </motion.a>
+              <motion.a
+                href="mailto:rafiurrahman1918@gmail.com"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#ea4335]/10 border border-[#ea4335]/30 rounded-lg text-[#ea4335] font-semibold hover:bg-[#ea4335]/20 transition-all"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Mail size={18} />
+                Email
+              </motion.a>
             </div>
           </motion.div>
         </div>
