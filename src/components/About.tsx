@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { useInView } from "react-intersection-observer";
 import { Code2, Cpu, Rocket, BookOpen, Linkedin, Mail } from "lucide-react";
+import { useState, useEffect } from "react";
 import { SectionMatrixRain } from "./SectionMatrixRain";
 import profileImage from "../assets/d20210aa9445e5e607e401fd25046fe77293a792.png";
 
@@ -9,6 +10,17 @@ export function About() {
     triggerOnce: true,
     threshold: 0.1,
   });
+
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const stats = [
     { label: "Projects Built", value: "15+", icon: Rocket },
@@ -44,6 +56,7 @@ export function About() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex justify-center"
+            style={{ y: scrollY * 0.3 }}
           >
             <div className="relative w-full max-w-md">
               <motion.div
