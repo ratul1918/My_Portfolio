@@ -89,15 +89,11 @@ export function Hero() {
           >
             <motion.button
               onClick={scrollToProjects}
-              className="px-8 py-4 bg-linear-to-r from-[#00ff66] to-[#00eaff] text-black font-bold rounded-lg relative overflow-hidden group"
+              className="px-8 py-4 border-2 border-[#00ff66] text-[#00ff66] font-bold rounded-lg hover:bg-[#00ff66]/10 flex items-center gap-2"
               whileHover={{ scale: 1.05, boxShadow: "0 0 30px #00ff66" }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="relative z-10">View Projects</span>
-              <motion.div
-                className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20"
-                transition={{ duration: 0.3 }}
-              />
+              View Projects
             </motion.button>
 
             <motion.a
