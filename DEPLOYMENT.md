@@ -42,8 +42,15 @@ Follow the CLI prompts:
 
 ### 3. **Environment Variables (Optional)**
 
-In Vercel Dashboard under Project Settings → Environment Variables, add:
-- `VITE_API_URL`: Your API endpoint (if applicable)
+In Vercel Dashboard:
+1. Go to Project Settings → Environment Variables
+2. Add new variables:
+   - **Name:** `VITE_API_URL`
+   - **Value:** Your API endpoint (if applicable)
+3. Select environments (Production, Preview, Development)
+4. Click "Save"
+
+**Note:** The app works without environment variables. Only add if you have a backend API.
 
 ### 4. **Custom Domain (Optional)**
 
