@@ -17,7 +17,7 @@ A modern, fully responsive personal portfolio website built with React, TypeScri
 ## 🛠️ Tech Stack
 
 - **Frontend Framework**: React 18
-- **Language**: TypeScript
+- **Language**: TypeScript 
 - **Build Tool**: Vite
 - **Styling**: TailwindCSS + CSS Modules
 - **Component Library**: shadcn/ui
