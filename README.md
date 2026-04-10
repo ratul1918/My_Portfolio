@@ -1,5 +1,5 @@
 
-# 🚀 Futuristic Personal Portfolio
+# 🚀 Futuristic Personal Portfolio 
 
 A modern, fully responsive personal portfolio website built with React, TypeScript, and Vite. Features a sleek futuristic design with interactive components, smooth animations, and a matrix rain effect.
 
