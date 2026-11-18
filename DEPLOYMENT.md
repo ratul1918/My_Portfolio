@@ -4,7 +4,7 @@ This portfolio uses the existing GitHub repository and Vercel hosting setup.
 
 - Repository: https://github.com/ratul1918/My_Portfolio
 - Production branch: `main`
-- Public URL: https://port-kappa-cyan.vercel.app
+- Public URL: https://rafiurrahman1918.vercel.app
 
 ## Before publishing
 

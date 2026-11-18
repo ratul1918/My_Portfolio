@@ -2,7 +2,7 @@
 
 A personal portfolio for a CSE student, development learner, vibe coder, and aspiring researcher exploring artificial intelligence, machine learning, and computer vision.
 
-**Live site:** [port-kappa-cyan.vercel.app](https://port-kappa-cyan.vercel.app)
+**Live site:** [rafiurrahman1918.vercel.app](https://rafiurrahman1918.vercel.app)
 
 ## What’s inside
 
