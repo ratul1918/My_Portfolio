@@ -1,124 +1,81 @@
+# Rafiur Rahman — Portfolio
 
-# 🚀 Futuristic Personal Portfolio 
+A personal portfolio for a CSE student, development learner, vibe coder, and aspiring researcher exploring artificial intelligence, machine learning, and computer vision.
 
-A modern, fully responsive personal portfolio website built with React, TypeScript, and Vite. Features a sleek futuristic design with interactive components, smooth animations, and a matrix rain effect.
+**Live site:** [port-kappa-cyan.vercel.app](https://port-kappa-cyan.vercel.app)
 
-## ✨ Features
+## What’s inside
 
-- **⚡ Lightning Fast** - Built with Vite for instant hot module replacement and optimized builds
-- **🎨 Modern UI** - Beautiful gradient designs and futuristic styling with TailwindCSS
-- **📱 Fully Responsive** - Mobile-first design that looks great on all devices
-- **🎭 Interactive Components** - Smooth animations, tooltips, and engaging user interactions
-- **🔤 Matrix Rain Effect** - Eye-catching matrix rain animation effect
-- **📊 GitHub Stats** - Integrated GitHub statistics display
-- **🎯 Multiple Sections** - Hero, About, Skills, Projects, and Contact sections
-- **🌗 Modern Tooling** - TypeScript for type safety, Vite for fast development
+- Responsive editorial design with warm accents, animated artwork, scroll reveals, and reduced-motion support.
+- Light and dark themes: follows the device preference initially and remembers a visitor’s selection locally.
+- Recent work: The LightHouse, Cha Ghor, CollabForge, and Elite Pitch, with repository links and clear project statuses.
+- Selected web and mobile projects, with illustrative visuals labeled as interface studies.
+- A dedicated research section for early exploration in AI, ML, and computer vision.
+- Personal background, learning interests, milestones, and links to GitHub, LinkedIn, and Codeforces.
+- Contact through an email link and a copy-address button. There is no contact-form backend.
 
-## 🛠️ Tech Stack
+Research interests are presented as a learning journey, not completed publications or established expertise. Project information is maintained manually; dates reflect repository activity rather than a live GitHub feed.
 
-- **Frontend Framework**: React 18
-- **Language**: TypeScript 
-- **Build Tool**: Vite
-- **Styling**: TailwindCSS + CSS Modules
-- **Component Library**: shadcn/ui
-- **Routing**: React Router
-- **Form Handling**: React Hook Form
-- **Animations**: Custom CSS animations
-- **Charting**: Recharts
-- **Toast Notifications**: Sonner
+## Stack
 
-## 📁 Project Structure
+The current page uses **React 18, TypeScript, Vite, Motion, Lucide icons, and plain CSS**. Project illustrations and the animated hero sculpture are built with HTML/CSS. The portrait is bundled locally. Fonts are loaded from Google Fonts with local fallbacks.
 
-```
-src/
-├── components/
-│   ├── About.tsx              # About section component
-│   ├── Contact.tsx            # Contact section with form
-│   ├── FeaturedProjects.tsx   # Featured projects showcase
-│   ├── FunProjects.tsx        # Fun side projects
-│   ├── GitHubStats.tsx        # GitHub statistics display
-│   ├── Hero.tsx               # Hero/landing section
-│   ├── MatrixRain.tsx         # Matrix rain effect
-│   ├── Navigation.tsx         # Navigation bar
-│   ├── SectionMatrixRain.tsx  # Section divider with matrix effect
-│   ├── Skills.tsx             # Skills showcase
-│   ├── lib/                   # Utility components
-│   │   └── ImageWithFallback.tsx
-│   ├── ui/                    # shadcn/ui components
-├── pages/
-│   └── Home.tsx               # Main home page
-├── styles/
-│   ├── globals.css            # Global styles
-│   └── index.css              # Main styles
-├── assets/                    # Static assets
-├── guidelines/
-│   └── Guidelines.md          # Development guidelines
-├── App.tsx                    # Main App component
-├── main.tsx                   # Entry point
-├── routes.ts                  # Route definitions
-└── Attributions.md            # Attribution and credits
+The repository retains older template components and dependencies, but the current page does not render them.
+
+## Run locally
+
+Use Node.js 22 LTS and npm.
+
+```sh
+git clone https://github.com/ratul1918/My_Portfolio.git
+cd My_Portfolio
+npm ci
+npm run dev
 ```
 
-## 🚀 Getting Started
+Open the local URL printed by Vite, normally `http://localhost:3000`.
 
-### Prerequisites
-
-- Node.js 16+ 
-- npm or yarn package manager
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd My_Portfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-   
-   The application will be available at `http://localhost:5173`
-
-### Build for Production
-
-```bash
+```sh
+npm run typecheck
 npm run build
+npm run preview
 ```
 
-## 📝 Available Scripts
+- `typecheck` validates the active application and its imported components.
+- `build` creates the production site in `dist/`.
+- `preview` serves that production build locally; use the URL it prints.
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
+No environment variables or API keys are required. The application uses section anchors such as `/#research`, rather than separate page routes.
 
-## 🎨 Customization
+## Edit content
 
-All sections can be customized by editing component files in `src/components/`:
-- **About**: `About.tsx`
-- **Skills**: `Skills.tsx`
-- **Projects**: `FeaturedProjects.tsx` & `FunProjects.tsx`
-- **Contact**: `Contact.tsx`
-- **Styling**: `src/styles/globals.css`
+| File | Purpose |
+| --- | --- |
+| `src/pages/Home.tsx` | Introduction, navigation, theme control, selected projects, background, toolkit, contact, and footer |
+| `src/components/RecentWork.tsx` | Recent projects, demo links, interests, and milestones |
+| `src/components/Research.tsx` | AI, ML, and computer vision research interests and learning plans |
+| `src/index.css` | Layout, animations, responsive breakpoints, and both themes |
+| `src/assets/` | Local portrait image |
+| `index.html` | Page title, social metadata, and initial theme selection |
+| `vercel.json` | Hosting settings, asset caching, and social redirects |
 
-## 🙏 Credits
+Keep descriptions and statuses accurate when updating projects. Only add demo links that point to an actual deployment. Contact links open the visitor’s email client; copying an address does not send a message.
 
-- **shadcn/ui** - Component library (MIT License)
-- **Unsplash** - Free photos and images
-- **Lucide Icons** - Icon library
-- **Recharts** - Charting library
+## Deployment
 
-See [Attributions.md](src/Attributions.md) for complete attributions.
+The existing hosting target is Vercel. The repository configuration specifies:
 
----
+- Framework: Vite
+- Build: `npm run build`
+- Output: `dist`
+- Install: `npm ci`
 
-**Built with ❤️ using React, TypeScript, and Vite**
-  
+The committed lockfile makes dependency installation reproducible. A push to `main` should trigger the existing Vercel Git integration when it is enabled. See [DEPLOYMENT.md](DEPLOYMENT.md) for deployment verification and troubleshooting.
+
+## Validation notes
+
+The active application has a dedicated TypeScript configuration in `tsconfig.app.json`. Running the original repository-wide `npx tsc --noEmit` also checks unused legacy UI templates, which contain pre-existing version-suffixed import errors. The old lint command likewise requires an ESLint setup that is not included; use the documented typecheck and production build for this application.
+
+## Credits
+
+React, Vite, Motion, and Lucide power the current implementation. See [src/Attributions.md](src/Attributions.md) for retained template attributions.

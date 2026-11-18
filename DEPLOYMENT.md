@@ -1,102 +1,46 @@
-# Vercel Deployment Guide
+# Deployment and verification
 
-## Prerequisites
+This portfolio uses the existing GitHub repository and Vercel hosting setup.
 
-- [Vercel Account](https://vercel.com/signup)
-- [GitHub Account](https://github.com) with repository access
-- Git installed locally
+- Repository: https://github.com/ratul1918/My_Portfolio
+- Production branch: `main`
+- Public URL: https://port-kappa-cyan.vercel.app
 
-## Deployment Steps
+## Before publishing
 
-### 1. **Push to GitHub**
-```bash
-git remote add origin https://github.com/ratul1918/My_Portfolio.git
-git branch -M main
-git push -u origin main
+Use Node.js 22 LTS and run:
+
+```sh
+npm ci
+npm run typecheck
+npm run build
+npm run preview
 ```
 
-### 2. **Deploy on Vercel**
+Check navigation, project links, mobile layout, theme switching, and the research section in the production preview. Theme preference should survive a reload. The contact action opens an email client; it does not submit to a server.
 
-#### Option A: Using Vercel CLI
-```bash
-npm i -g vercel
-vercel
-```
+## Existing Vercel project
 
-Follow the CLI prompts:
-- Confirm project directory
-- Link to existing project or create new
-- Override build settings (use defaults)
+Keep the existing project linked to `ratul1918/My_Portfolio` and its production branch set to `main`. The tracked `vercel.json` declares Vite, `npm ci`, `npm run build`, and `dist` output. No environment variables are required.
 
-#### Option B: Using Vercel Dashboard
-1. Go to [vercel.com/dashboard](https://vercel.com/dashboard)
-2. Click "Add New" → "Project"
-3. Import your GitHub repository
-4. Configure project settings:
-   - **Framework Preset**: Vite
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-   - **Install Command**: `npm install`
-5. Add Environment Variables (if needed)
-6. Click "Deploy"
+Push the reviewed changes to `main`. If the Git integration is enabled, Vercel creates a new deployment. In the Vercel project dashboard, verify that the production deployment is Ready and its source commit matches the pushed commit before treating publication as complete.
 
-### 3. **Environment Variables (Optional)**
+## Verify the public site
 
-In Vercel Dashboard:
-1. Go to Project Settings → Environment Variables
-2. Add new variables:
-   - **Name:** `VITE_API_URL`
-   - **Value:** Your API endpoint (if applicable)
-3. Select environments (Production, Preview, Development)
-4. Click "Save"
+1. Open the public URL and confirm the page title includes “Learner, Builder & Aspiring Researcher”.
+2. Confirm recent projects and the AI/ML/computer vision research section are present.
+3. Switch between light and dark themes and reload to check persistence.
+4. Check the mobile menu, section links, project links, and copy-email control.
+5. Confirm production JavaScript, CSS, and the portrait load successfully.
 
-**Note:** The app works without environment variables. Only add if you have a backend API.
-
-### 4. **Custom Domain (Optional)**
-
-1. Go to Project Settings → Domains
-2. Add your custom domain
-3. Follow DNS configuration instructions
-
-## Post-Deployment
-
-### Verify Deployment
-- Check build status in Vercel Dashboard
-- Visit your deployed URL: `https://your-project.vercel.app`
-- Test all navigation and links
-
-### Enable Auto-Deploy
-- Default: Enabled (deploys on every push to `main`)
-- Configure branch protection in GitHub Settings
-
-### Monitor Performance
-- Use Vercel Analytics
-- Check Core Web Vitals
-- Monitor deployment logs
+The `/github` and `/linkedin` redirects are retained. Section URLs use fragments (for example `/#research`) and do not need a server-side router.
 
 ## Troubleshooting
 
-### Build Fails
-- Check `npm run build` locally works
-- Verify Node.js version compatibility
-- Check for missing dependencies
+- **Old site still visible:** check whether the latest Git commit produced a deployment, whether it is Ready, and whether the production domain points to it. A local build does not verify a Vercel deployment.
+- **Install failure:** use the committed lockfile with `npm ci` and confirm the configured Node version is supported by the dependencies.
+- **Build failure:** reproduce `npm run build` locally and inspect the Vercel build log.
+- **Repository-wide type errors:** unused legacy template components have existing import issues. `npm run typecheck` checks the active application via `tsconfig.app.json`.
+- **External demo unavailable:** those projects have separate hosting and are not deployed with this portfolio.
 
-### Deployment Errors
-- Review build logs in Vercel Dashboard
-- Check environment variables are set correctly
-- Ensure `.gitignore` excludes `node_modules`
-
-### Performance Issues
-- Enable caching headers (configured in `vercel.json`)
-- Optimize images
-- Check for large dependencies
-
-## Useful Links
-
-- [Vercel Documentation](https://vercel.com/docs)
-- [Vite Deployment Guide](https://vitejs.dev/guide/static-deploy.html#vercel)
-- [Build Output API](https://vercel.com/docs/build-output-api)
-
-## Support
-
-For Vercel support: [support.vercel.com](https://support.vercel.com)
+Never commit environment files, access tokens, or Vercel credentials.
